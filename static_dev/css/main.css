@@ -1,0 +1,37 @@
+.bold-text{
+    font-family: "Inter";
+    font-size: 22pt !important;
+    font-weight: bold;
+}
+.navbarstyle{
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+.maincontainer{
+    background-color: #F9F9F9;
+    /*-webkit-box-shadow: 0px 5px 60px -18px rgba(255, 120, 120, 0.3);
+    -moz-box-shadow: 0px 5px 60px -18px rgba(255, 120, 120, 0.3);
+    box-shadow: 0px 5px 60px -18px rgba(255, 120, 120, 0.3);*/
+}
+.m-button{
+    background-color: #ff6161 !important;
+    color: #ffffff !important;
+    font-family: "Inter" !important;
+}
+.m-footer{
+    background-color: #ffffff;
+    bottom: 0;
+}
+.m-text{
+    color: rgb(0, 0, 0);
+    font-family: "Inter";
+    font-weight:100;
+}
+.m-col{
+    background-color: white;
+}
+.m-button:hover{
+    background-color: #e14c4c !important;
+}
