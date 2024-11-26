@@ -20,9 +20,9 @@
         <div class="collapse navbar-collapse">
           
             {% comment %} <img src= "image/rocket.svg" class="img-fluid me-4 ms-4 " alt="..."></img>          {% endcomment %}
-            <img src= {% static "image/rocket.svg" %} class="img-fluid me-4 ms-4 " alt="..."></img> 
-            <a class="navbar-brand m-0 bold-text" href="#" style="color: #7D7D7D;">Impulse</a>
-            <a class="navbar-brand bold-text" href="#" style="color: #FF5757;">.Predictor</a>
+            <a href="/"><img src= {% static "image/rocket.svg" %} class="img-fluid me-4 ms-4 " alt="..."></img></a>
+            <a href="/" class="navbar-brand m-0 bold-text" href="#" style="color: #7D7D7D;">Impulse</a>
+            <a href="/" class="navbar-brand bold-text" href="#" style="color: #FF5757;">.Predictor</a>
                
         </div>
       </nav>
@@ -39,12 +39,12 @@
 
             <form>
             <div class="form-floating mb-3">
-              <input type="" class="form-control" id="" placeholder="Введите значение 1">
+              <input name="value-1" type="" class="form-control" id="" placeholder="Введите значение 1">
               <label for="">Состав топлива</label>
             </div>
 
             <div class="form-floating mb-3">
-              <input type="number" min="0" max="1000" class="form-control" id="" placeholder="Введите значение 1">
+              <input name="value-2" type="number" min="0" max="1000" class="form-control" id="" placeholder="Введите значение 1">
               <label for="">Коэффициент объёмного расширения</label>
             </div>
             <button class="w-100 btn btn-lg m-button" type="submit"><p class="m-2">Рассчитать</p></button> 
@@ -56,12 +56,14 @@
           <div class="col m-4 m-col rounded-3 py-5 border" >
             <div class="container">
               <h1 class="lh-1  bold-text pb-5">Ваш результат</h1>
-              <small class="text-muted" style=" font-size: 16pt; color: #000000 !important; font-family: Inter;  font-weight:600;">1.333333333333333333</small>
+              <small class="text-muted" style=" font-size: 16pt; color: #000000 !important; font-family: Inter;  font-weight:600;">{{ result }}</small>
             </div>
           </div>
 
         </div>
 
+      <div id="myEditor" style="height:600px; border:2px solid gray; border-radius:5px;"></div>
+      
       </div>
 
 
@@ -91,5 +93,9 @@
       
     {% comment %} <script src="js/bootstrap.bundle.min.js"></script> {% endcomment %}
     <script src={% static "js/bootstrap.bundle.min.js" %}></script>
+    <script src="https://molsoft.com/lib/moledit.js" type="text/javascript"></script>
+    <script>
+      document.moledit = new ChemicalView("", "myEditor" );
+    </script>
 </body> 
 </html>

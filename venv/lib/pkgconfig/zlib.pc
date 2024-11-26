@@ -1,0 +1,13 @@
+prefix=/home/mikhail/Documents/Илья_литература/django/venv
+exec_prefix=/home/mikhail/Documents/Илья_литература/django/venv
+libdir=/home/mikhail/Documents/Илья_литература/django/venv/lib
+sharedlibdir=/home/mikhail/Documents/Илья_литература/django/venv/lib
+includedir=/home/mikhail/Documents/Илья_литература/django/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

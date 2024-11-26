@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% comment %} <!-- <link href="index.css" rel="stylesheet"> --> {% endcomment %}
+    <link href={% static "index.css" %} rel="stylesheet">
+    {% comment %} <link href="css/main.css" rel="stylesheet"> {% endcomment %}
+    <link href={% static "css/main.css" %} rel="stylesheet">
+    {% comment %} <link href="css/bootstrap.min.css" rel="stylesheet"> {% endcomment %}
+    <link href={% static "css/bootstrap.min.css" %} rel="stylesheet">
+
+</head>
+<body style="background-color: #EDEDED;">
+    
+    
+    <nav class="navbar navbar-expand navbarstyle mb-5" aria-label="Second navbar example">
+        <div class="collapse navbar-collapse">
+          
+            {% comment %} <img src= "image/rocket.svg" class="img-fluid me-4 ms-4 " alt="..."></img>          {% endcomment %}
+            <img src= {% static "image/rocket.svg" %} class="img-fluid me-4 ms-4 " alt="..."></img> 
+            <a class="navbar-brand m-0 bold-text" href="#" style="color: #7D7D7D;">Impulse</a>
+            <a class="navbar-brand bold-text" href="#" style="color: #FF5757;">.Predictor</a>
+               
+        </div>
+      </nav>
+    
+      <div class="container-sm col-xs-12 col-sm-12 rounded-3 maincontainer p-5 mb-5">
+       
+        <div class="row text-center">
+          <div class="col m-4" >
+            <div class="container pb-4">
+              <h1 class="lh-1  bold-text">Посчитать удельный импульс?</h1>
+              <small class="text-muted ">Сделаем за пару секунд!</small>
+            </div>
+            
+
+            <form>
+            <div class="form-floating mb-3">
+              <input type="" class="form-control" id="" placeholder="Введите значение 1">
+              <label for="">Состав топлива</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="number" min="0" max="1000" class="form-control" id="" placeholder="Введите значение 1">
+              <label for="">Коэффициент объёмного расширения</label>
+            </div>
+            <button class="w-100 btn btn-lg m-button" type="submit"><p class="m-2">Рассчитать</p></button> 
+            <button class="w-100 btn btn-lg m-button" style="margin-top: 15px" type="reset"><p class="m-2">Сбросить</p></button> 
+          </div>
+          </form>
+
+
+          <div class="col m-4 m-col rounded-3 py-5 border" >
+            <div class="container">
+              <h1 class="lh-1  bold-text pb-5">Ваш результат</h1>
+              <small class="text-muted" style=" font-size: 16pt; color: #000000 !important; font-family: Inter;  font-weight:600;">1.333333333333333333</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="container-fluid p-0 m-footer" style="margin-top: 30%" >
+        <footer class="container py-5 footer-text" >
+          <div class="row">
+            <div class="col-6 col-md">
+              <h5 class ="bold-text" style="font-size: 16pt !important;">Участник конкурса</h5>
+              <ul class="list-unstyled text-small">
+                <li ><b class=" m-text" >Мирославлев Илья Антонович</b></li>
+                <li ><b class=" m-text" >МБОУ "СШ №4" г.Иваново</b></li>
+                <li ><b class=" m-text" >ilyamiroslavlev@mail.ru</b></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5 class ="bold-text" style="font-size: 16pt !important;">Научный руководитель</h5>
+              <ul class="list-unstyled text-small">
+                <li ><b class=" m-text" >Луканов Михаил Михайлович</b></li>
+                <li ><b class=" m-text" >Сколковский институт науки и технологий</b></li>
+                <li ><b class=" m-text" ></b></li>
+  
+              </ul>
+            </div>
+          </div>
+        </footer>    
+      </div>
+      
+    {% comment %} <script src="js/bootstrap.bundle.min.js"></script> {% endcomment %}
+    <script src={% static "js/bootstrap.bundle.min.js" %}></script>
+</body> 
+</html>
